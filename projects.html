@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Full project index for Tom Zhang's actuarial portfolio: pricing, reserving, and forecasting work."
+    />
+    <title>Project index | Tom Zhang</title>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg?v=github-20260521" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260918-source-typography" />
+  </head>
+  <body>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="./index.html" aria-label="Tom Zhang home">
+        <span>Tom Zhang</span>
+        <small>Actuarial Portfolio</small>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="./projects.html" aria-current="page">Projects</a>
+        <a href="./index.html#capabilities">Capabilities</a>
+        <a href="./index.html#profile">Profile</a>
+      </nav>
+    </header>
+
+    <main id="top" class="page">
+      <div class="page-heading reveal">
+        <p class="section-kicker">Project index</p>
+        <h1>All projects</h1>
+        <p>
+          Every project listed here follows the same structure: the business question, how the data was prepared,
+          which model was appropriate, and how the result would change a pricing, reserving, or risk decision.
+          Case-study pages are added as each project is written up.
+        </p>
+      </div>
+
+      <table class="project-table reveal">
+        <thead>
+          <tr>
+            <th scope="col">No.</th>
+            <th scope="col">Project</th>
+            <th scope="col">Methods</th>
+            <th scope="col">Tools</th>
+            <th scope="col">Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>01</td>
+            <td>
+              <span class="project-title">Motor claims frequency with GLM diagnostics</span>
+              <span class="project-area">Pricing model</span>
+            </td>
+            <td>
+              <ul class="tag-list" aria-label="Methods">
+                <li>GLM</li>
+                <li>Frequency</li>
+                <li>Model validation</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="tag-list" aria-label="Tools">
+                <li class="tag-tech">Python</li>
+              </ul>
+            </td>
+            <td><span class="project-status">Draft slot</span></td>
+          </tr>
+          <tr>
+            <td>02</td>
+            <td>
+              <span class="project-title">Claims triangle reserve estimate and uncertainty range</span>
+              <span class="project-area">Reserving</span>
+            </td>
+            <td>
+              <ul class="tag-list" aria-label="Methods">
+                <li>Chain ladder</li>
+                <li>Bootstrap</li>
+                <li>IBNR</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="tag-list" aria-label="Tools">
+                <li class="tag-tech">R</li>
+              </ul>
+            </td>
+            <td><span class="project-status">Draft slot</span></td>
+          </tr>
+          <tr>
+            <td>03</td>
+            <td>
+              <span class="project-title">Policy lapse and renewal behavior analysis</span>
+              <span class="project-area">Forecasting</span>
+            </td>
+            <td>
+              <ul class="tag-list" aria-label="Methods">
+                <li>Survival analysis</li>
+                <li>Forecasting</li>
+                <li>Segmentation</li>
+              </ul>
+            </td>
+            <td>
+              <ul class="tag-list" aria-label="Tools">
+                <li class="tag-tech">SQL</li>
+              </ul>
+            </td>
+            <td><span class="project-status">Draft slot</span></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <p class="page-note">Draft slot: scoped and in preparation. Each row links to its case study once published.</p>
+    </main>
+
+    <footer class="footer">
+      <p>Actuarial portfolio focused on pricing, reserving, and risk analytics.</p>
+      <a href="./index.html">Back to home</a>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

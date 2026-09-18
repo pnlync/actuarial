@@ -12,10 +12,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Quicksand:wght@400;500;600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&family=Source+Sans+3:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260612-footer-spacing-copy" />
+    <link rel="stylesheet" href="./styles.css?v=20260918-source-typography" />
   </head>
   <body>
     <header class="site-header" data-elevated="false">
@@ -56,7 +56,7 @@
           </div>
           <div>
             <dt>Tools</dt>
-            <dd>Python, R, SQL, Excel</dd>
+            <dd class="mono">Python · R · SQL · Excel</dd>
           </div>
           <div>
             <dt>Methods</dt>
@@ -65,10 +65,8 @@
         </dl>
       </section>
 
-      <section class="section intro reveal" aria-labelledby="intro-title">
-        <div>
-          <h2 id="intro-title">Each project should answer a business question, not just display a model.</h2>
-        </div>
+      <section class="section intro reveal" aria-label="Approach">
+        <p class="lede">Each project should answer a business question, not just display a model.</p>
         <p>
           The site is structured around actuarial decision-making: what was uncertain, how the data was prepared,
           which model was appropriate, and how the result would change a pricing, reserving, or risk decision.
@@ -97,7 +95,7 @@
               assumptions, and explain rating-factor movement.
             </p>
             <ul class="tag-list" aria-label="Project methods">
-              <li>Python</li>
+              <li class="tag-tech">Python</li>
               <li>GLM</li>
               <li>Frequency</li>
               <li>Model validation</li>
@@ -116,7 +114,7 @@
               a decision range rather than one point estimate.
             </p>
             <ul class="tag-list" aria-label="Project methods">
-              <li>R</li>
+              <li class="tag-tech">R</li>
               <li>Chain ladder</li>
               <li>Bootstrap</li>
               <li>IBNR</li>
@@ -135,7 +133,7 @@
               customer-value actions.
             </p>
             <ul class="tag-list" aria-label="Project methods">
-              <li>SQL</li>
+              <li class="tag-tech">SQL</li>
               <li>Survival analysis</li>
               <li>Forecasting</li>
               <li>Segmentation</li>
