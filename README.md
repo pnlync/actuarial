@@ -10,7 +10,7 @@ Live site: https://pnlync.github.io/actuarial-portfolio-site/
 - `projects.html` - full project index (table view)
 - `styles.css` - visual system, typography, layout, and responsive rules
 - `script.js` - header state and scroll reveal interactions
-- `assets/actuarial-surface.png` - local hero visual asset
+- `assets/favicon.svg` - site icon (the hero chart is drawn by `script.js` from the `TRIANGLE` constant)
 
 ## Typography
 
