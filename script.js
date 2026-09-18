@@ -14,7 +14,7 @@ const observer = new IntersectionObserver(
       }
     });
   },
-  { threshold: 0.16 }
+  { threshold: 0.08, rootMargin: "0px 0px -8% 0px" }
 );
 
 revealTargets.forEach((target) => observer.observe(target));

@@ -8,6 +8,7 @@ Live site: https://pnlync.github.io/actuarial-portfolio-site/
 
 - `index.html` - homepage content and section structure
 - `projects.html` - full project index (table view)
+- `404.html` - not-found page served by GitHub Pages
 - `styles.css` - visual system, typography, layout, and responsive rules
 - `script.js` - header state and scroll reveal interactions
 - `assets/favicon.svg` - site icon (the hero chart is drawn by `script.js` from the `TRIANGLE` constant)
@@ -46,4 +47,5 @@ http://localhost:4173/
 ## Update Before Publishing
 
 - Replace the `GitHub / LinkedIn / CV PDF` placeholder in the contact section with real links.
-- Change each `Draft slot` project into a real project link (on both pages) once the case study page exists.
+- Change each `In preparation` project into a real project link (on both pages) once the case study page exists.
+- Remove the red dashed `.todo` placeholders in the profile section once the content is written.
