@@ -11,7 +11,7 @@ Live site: https://pnlync.github.io/actuarial-portfolio-site/
 - `404.html` - not-found page served by GitHub Pages
 - `styles.css` - visual system, typography, layout, and responsive rules
 - `script.js` - header state and scroll reveal interactions
-- `assets/favicon.svg` - site icon (the hero chart is drawn by `script.js` from the `TRIANGLE` constant)
+- `assets/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` - TZ monogram set in Source Sans 3 Bold (outlines, no font dependency)
 
 ## Typography
 

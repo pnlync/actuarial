@@ -17,14 +17,16 @@
     <meta property="og:locale" content="en_GB" />
     <meta name="twitter:card" content="summary" />
     <script>document.documentElement.classList.add("js");</script>
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg?v=github-20260521" />
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg?v=tz-20260918" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png?v=tz-20260918" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png?v=tz-20260918" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260918-review-pass" />
+    <link rel="stylesheet" href="./styles.css?v=20260918-typographic-hero" />
   </head>
   <body>
     <a class="skip-link" href="#top">Skip to content</a>
@@ -44,38 +46,24 @@
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
           <p class="eyebrow">Insurance analytics / risk modelling / reserving</p>
-          <h1 id="hero-title">Actuarial work, shown through evidence.</h1>
+          <h1 id="hero-title">Actuarial work that answers a business question.</h1>
           <p class="hero-text">
-            A focused portfolio for pricing, claims analysis, reserving, and forecasting projects that can stand behind a CV.
+            Pricing, reserving, and forecasting projects, each built around the decision it supports rather than the
+            model behind it.
           </p>
           <div class="hero-actions">
             <a class="button primary" href="#projects">View projects</a>
             <a class="button secondary" href="#profile">About me</a>
           </div>
         </div>
-        <figure class="hero-figure reveal">
-          <svg
-            id="hero-chart"
-            viewBox="0 0 560 380"
-            role="img"
-            aria-labelledby="hero-chart-title hero-chart-desc"
-          >
-            <title id="hero-chart-title">Chain-ladder development curves</title>
-            <desc id="hero-chart-desc">
-              Cumulative paid claims by accident year plotted against development year. Observed values are drawn as
-              solid lines; chain-ladder projections to ultimate are drawn as dashed lines.
-            </desc>
-          </svg>
-          <figcaption>
-            Cumulative paid claims by accident year. Solid: observed. Dashed: chain-ladder projection to ultimate,
-            computed in the browser from an illustrative triangle.
-            <!-- TODO: replace TRIANGLE in script.js with a triangle from a real project (anonymised or scaled) and update this caption. -->
-          </figcaption>
-        </figure>
-        <dl class="hero-metrics reveal" aria-label="Portfolio focus">
+        <dl class="hero-facts reveal" aria-label="At a glance">
           <div>
-            <dt>Focus</dt>
-            <dd>Insurance &amp; actuarial analytics</dd>
+            <dt>Based in</dt>
+            <dd>Dublin, Ireland <span class="fact-sub">Open to actuarial roles</span></dd>
+          </div>
+          <div>
+            <dt>IFoA exams</dt>
+            <dd>CS1, CS2, CB2, CB3 sat</dd>
           </div>
           <div>
             <dt>Tools</dt>
@@ -83,17 +71,9 @@
           </div>
           <div>
             <dt>Methods</dt>
-            <dd>GLM, triangles, simulation</dd>
+            <dd>GLM, claims triangles, simulation</dd>
           </div>
         </dl>
-      </section>
-
-      <section class="section intro reveal" aria-label="Approach">
-        <p class="lede">Each project should answer a business question, not just display a model.</p>
-        <p>
-          The site is structured around actuarial decision-making: what was uncertain, how the data was prepared,
-          which model was appropriate, and how the result would change a pricing, reserving, or risk decision.
-        </p>
       </section>
 
       <section class="section projects" id="projects" aria-labelledby="projects-title">
@@ -101,8 +81,8 @@
           <div class="section-note">
             <p class="section-kicker">Selected work</p>
             <p>
-              Three projects, each being written up as a full case study.
-              <a href="./projects.html">See the project index</a> for the table view.
+              Each case study follows the same structure: the question, the data, the method, and the decision it
+              changes. <a href="./projects.html">See the project index</a> for the table view.
             </p>
           </div>
           <h2 id="projects-title">Selected projects</h2>
@@ -311,6 +291,6 @@
       <a href="#top">Back to top</a>
     </footer>
 
-    <script src="./script.js?v=20260918-review-pass"></script>
+    <script src="./script.js?v=20260918-typographic-hero"></script>
   </body>
 </html>
