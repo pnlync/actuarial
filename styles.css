@@ -695,6 +695,14 @@ td {
   margin-top: 2px;
 }
 
+/* Project meta line (date · context) */
+.project-meta {
+  color: rgba(255, 250, 241, 0.66);
+  font-family: var(--sans);
+  font-size: var(--text-meta);
+  margin: -2px 0 12px;
+}
+
 /* Visible placeholder for content still to be written */
 .todo {
   border: 1px dashed rgba(161, 75, 49, 0.6);
@@ -711,6 +719,202 @@ td {
 p.todo {
   margin: 20px 0 0;
   max-width: 44em;
+}
+
+.projects .todo {
+  border-color: rgba(228, 175, 77, 0.55);
+  color: #e4af4d;
+}
+
+.template-banner {
+  margin: 0 0 40px;
+  max-width: none;
+}
+
+/* ---------- Long-form article (case studies) ---------- */
+
+.article-header {
+  border-bottom: 1px solid var(--line);
+  margin-bottom: 8px;
+  padding-bottom: 36px;
+}
+
+.article-header h1 {
+  margin-bottom: 14px;
+  max-width: 22ch;
+}
+
+.article-meta {
+  color: var(--muted);
+  display: flex;
+  flex-wrap: wrap;
+  font-family: var(--sans);
+  font-size: var(--text-meta);
+  gap: 8px 10px;
+  margin: 0 0 26px;
+}
+
+.article-summary {
+  color: var(--ink-soft);
+  font-size: clamp(1.25rem, 1.8vw, 1.5rem);
+  max-width: 30em;
+}
+
+.article-layout {
+  align-items: start;
+  display: grid;
+  gap: clamp(32px, 6vw, 96px);
+  grid-template-columns: minmax(0, 1fr) minmax(220px, 300px);
+}
+
+/* min-width: 0 stops long code lines or wide tables from
+   widening the grid column (and the page) on small screens */
+.article-body,
+.article-aside {
+  min-width: 0;
+}
+
+.article-body > section {
+  padding-top: 48px;
+}
+
+.article-body h2 {
+  margin-bottom: 14px;
+}
+
+.article-body h3 {
+  margin-top: 30px;
+}
+
+.article-body p,
+.article-body ul,
+.article-body ol {
+  max-width: var(--measure);
+}
+
+.article-body ul,
+.article-body ol {
+  padding-left: 1.2em;
+}
+
+.article-body li {
+  margin-bottom: 6px;
+}
+
+.article-body li::marker {
+  color: var(--muted);
+}
+
+blockquote {
+  border-left: 2px solid var(--teal);
+  color: var(--ink-soft);
+  margin: 28px 0;
+  padding: 2px 0 2px 22px;
+}
+
+blockquote p {
+  margin: 0;
+}
+
+/* Code: inline tokens and blocks */
+:not(pre) > code {
+  background: var(--paper-soft);
+  border-radius: 3px;
+  font-size: 0.88em;
+  padding: 1px 5px;
+}
+
+pre {
+  background: var(--paper-soft);
+  border-radius: 4px;
+  margin: 22px 0;
+  max-width: 100%;
+  overflow-x: auto;
+  padding: 18px 20px;
+}
+
+pre code {
+  background: none;
+  font-size: var(--text-code);
+  padding: 0;
+}
+
+.article-figure {
+  margin: 28px 0;
+}
+
+.figure-placeholder {
+  align-items: center;
+  aspect-ratio: 16 / 9;
+  border: 1px dashed var(--line);
+  border-radius: 4px;
+  color: var(--muted);
+  display: grid;
+  font-family: var(--sans);
+  font-size: var(--text-meta);
+  justify-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.article-figure figcaption {
+  color: var(--muted);
+  font-family: var(--sans);
+  font-size: var(--text-small);
+  line-height: 1.45;
+  margin-top: 10px;
+}
+
+/* Data tables: Sans, tabular numerals, numbers right-aligned.
+   Wrap in .table-scroll so wide tables scroll sideways on phones
+   instead of widening the page. */
+.table-scroll {
+  margin: 22px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.table-scroll .data-table {
+  margin: 0;
+  min-width: 520px;
+}
+
+.data-table {
+  margin: 22px 0;
+}
+
+.data-table caption {
+  caption-side: top;
+  color: var(--muted);
+  font-size: var(--text-small);
+  font-weight: 500;
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.data-table th[scope="row"] {
+  color: var(--ink);
+  font-weight: 500;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.data-table .num {
+  text-align: right;
+}
+
+.article-aside {
+  position: sticky;
+  top: 96px;
+}
+
+.article-facts dd .tag-list {
+  margin: 4px 0 0;
+}
+
+.article-facts dd .tag-list li {
+  border-color: var(--line);
+  color: var(--ink-soft);
 }
 
 /* ---------- Contact ---------- */
@@ -971,6 +1175,18 @@ p.todo {
     padding-top: 128px;
   }
 
+  .article-layout {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .article-aside {
+    position: static;
+  }
+
+  .article-header h1 {
+    max-width: none;
+  }
+
   .project-table thead {
     display: none;
   }
@@ -1045,6 +1261,77 @@ p.todo {
     display: grid;
     gap: 12px;
     padding-block: 10px 28px;
+  }
+}
+
+@media print {
+  .js .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  body {
+    background: #fff;
+    color: #000;
+    font-size: 11pt;
+  }
+
+  .site-header,
+  .skip-link,
+  .hero-actions,
+  .footer a,
+  .template-banner {
+    display: none;
+  }
+
+  .hero {
+    min-height: auto;
+    padding-top: 24px;
+  }
+
+  .section,
+  .page {
+    padding-block: 32px;
+  }
+
+  .projects,
+  .areas {
+    background: none;
+    color: #000;
+  }
+
+  .projects .section-heading,
+  .projects .project-row {
+    border-color: #bbb;
+  }
+
+  .projects .project-main h3,
+  .projects .project-main p,
+  .projects .section-note p,
+  .projects .project-number,
+  .projects .tag-list li,
+  .projects .project-status,
+  .projects .project-meta {
+    color: #000;
+  }
+
+  .projects .tag-list li,
+  .projects .project-status {
+    border-color: #bbb;
+  }
+
+  .projects .section-kicker,
+  .projects .project-type {
+    color: #000;
+  }
+
+  .article-aside {
+    position: static;
+  }
+
+  a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 0.85em;
   }
 }
 

@@ -8,10 +8,12 @@ Live site: https://pnlync.github.io/actuarial-portfolio-site/
 
 - `index.html` - homepage content and section structure
 - `projects.html` - full project index (table view)
+- `case-study-template.html` - unlinked template for writing up a project (copy, fill, then link from the index)
 - `404.html` - not-found page served by GitHub Pages
 - `styles.css` - visual system, typography, layout, and responsive rules
 - `script.js` - header state and scroll reveal interactions
 - `assets/favicon.svg`, `favicon-32.png`, `apple-touch-icon.png` - TZ monogram set in Source Sans 3 Bold (outlines, no font dependency)
+- `assets/og-image.png` - 1200×630 link-preview image used by `og:image`
 
 ## Typography
 
@@ -46,6 +48,15 @@ http://localhost:4173/
 
 ## Update Before Publishing
 
-- Replace the `GitHub / LinkedIn / CV PDF` placeholder in the contact section with real links.
-- Change each `In preparation` project into a real project link (on both pages) once the case study page exists.
-- Remove the red dashed `.todo` placeholders in the profile section once the content is written.
+Every red dashed box on the site is a `.todo` placeholder. Search the HTML for `class="todo"` to find them all:
+
+- Homepage projects: month, year, and context line under each project title.
+- Profile: background paragraph, education, experience, availability.
+- Contact: GitHub, LinkedIn, and CV PDF links (also add them as `sameAs` in the JSON-LD block in `index.html`).
+- Exams: change "Sat" to "Passed" in the hero and profile once results are in.
+
+## Writing a Case Study
+
+1. Copy `case-study-template.html` to a new file at the root, for example `reserving-triangle.html`.
+2. Fill each placeholder, delete the template banner and the `noindex` meta tag.
+3. Link the page from the matching row in `projects.html` and the project row in `index.html`, and change the status badge from "In preparation" to "Case study".

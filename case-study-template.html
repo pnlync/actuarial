@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en-GB">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TEMPLATE: copy this file to <slug>.html (for example reserving-triangle.html), fill every "To fill"
+         placeholder, delete the template banner and the robots tag below, then link the page from the project
+         index and the homepage project row. -->
+    <meta name="robots" content="noindex" />
+    <meta name="description" content="To fill: one sentence that states the question this case study answers." />
+    <title>Case study template | Tom Zhang</title>
+    <meta name="theme-color" content="#f6f1e8" />
+    <script>document.documentElement.classList.add("js");</script>
+    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg?v=tz-20260918" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png?v=tz-20260918" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png?v=tz-20260918" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css?v=20260918-review-3" />
+  </head>
+  <body>
+    <a class="skip-link" href="#top">Skip to content</a>
+    <header class="site-header" data-elevated="false">
+      <a class="brand" href="./index.html" aria-label="Tom Zhang home">
+        <span>Tom Zhang</span>
+        <small>Actuarial Portfolio</small>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="./projects.html" aria-current="page">Projects</a>
+        <a href="./index.html#areas">Areas</a>
+        <a href="./index.html#profile">Profile</a>
+      </nav>
+    </header>
+
+    <main id="top" class="page article" tabindex="-1">
+      <p class="todo template-banner">
+        Template. Copy this file to a new name, replace every "To fill" box, remove this banner and the
+        <code>noindex</code> tag, then link the page from the project index.
+      </p>
+
+      <header class="article-header reveal">
+        <p class="section-kicker">Reserving <span class="todo">To fill: area (Pricing / Reserving / Forecasting)</span></p>
+        <h1>Claims triangle reserve estimate and uncertainty range</h1>
+        <p class="article-meta">
+          <span class="todo">To fill: Month Year</span>
+          <span aria-hidden="true">·</span>
+          <span class="todo">To fill: context, e.g. MSc project, self-directed, internship</span>
+          <span aria-hidden="true">·</span>
+          <span>Case study</span>
+        </p>
+        <p class="lede article-summary">
+          <span class="todo">
+            To fill: two sentences a hiring manager can stop at. The business question, and the answer in plain
+            terms with the headline number.
+          </span>
+        </p>
+      </header>
+
+      <div class="article-layout">
+        <div class="article-body">
+          <section aria-labelledby="q-title">
+            <h2 id="q-title">The question</h2>
+            <p>
+              <span class="todo">
+                To fill: who needed the answer, what decision depended on it, and what would go wrong if the
+                estimate was poor. Keep it to one short paragraph.
+              </span>
+            </p>
+          </section>
+
+          <section aria-labelledby="d-title">
+            <h2 id="d-title">The data</h2>
+            <p>
+              <span class="todo">
+                To fill: source, period, size, what was excluded and why, and the one preparation step that
+                mattered most (for example how partial-year exposure was treated).
+              </span>
+            </p>
+            <div class="table-scroll">
+              <table class="data-table">
+                <caption>Data summary</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Item</th>
+                    <th scope="col" class="num">Value</th>
+                    <th scope="col">Note</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">Accident years</th>
+                    <td class="num"><span class="todo">To fill</span></td>
+                    <td><span class="todo">e.g. 2018–2024, annual</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Claims records</th>
+                    <td class="num"><span class="todo">To fill</span></td>
+                    <td><span class="todo">after exclusions</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row">Exposure</th>
+                    <td class="num"><span class="todo">To fill</span></td>
+                    <td><span class="todo">unit, e.g. earned vehicle-years</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </section>
+
+          <section aria-labelledby="m-title">
+            <h2 id="m-title">The method</h2>
+            <p>
+              <span class="todo">
+                To fill: the method chosen and the alternative it was compared against. Say why this one fit the
+                data, not just what it is.
+              </span>
+            </p>
+            <h3>Assumptions</h3>
+            <ul>
+              <li><span class="todo">To fill: assumption one and how it was checked.</span></li>
+              <li><span class="todo">To fill: assumption two and how it was checked.</span></li>
+            </ul>
+            <h3>The step that carries the result</h3>
+            <p>
+              Show the one piece of code a reviewer would want to see, not the whole notebook. Inline identifiers
+              such as <code>ChainLadder::MackChainLadder()</code> or <code>statsmodels.GLM</code> are set in
+              Source Code Pro.
+            </p>
+            <pre><code># To fill: replace with the key step from the project
+factors = (cumulative.shift(-1, axis=1) / cumulative).apply(volume_weighted_mean)
+ultimate = latest_diagonal * factors[::-1].cumprod()[::-1]</code></pre>
+          </section>
+
+          <section aria-labelledby="r-title">
+            <h2 id="r-title">Results</h2>
+            <figure class="article-figure">
+              <div class="figure-placeholder" role="img" aria-label="To fill: chart placeholder">
+                To fill: one chart that shows the answer (PNG or SVG, 1600px wide, light background)
+              </div>
+              <figcaption>
+                <span class="todo">To fill: what the chart shows and the one thing to notice in it.</span>
+              </figcaption>
+            </figure>
+            <div class="table-scroll">
+              <table class="data-table">
+                <caption>Headline results</caption>
+                <thead>
+                  <tr>
+                    <th scope="col">Measure</th>
+                    <th scope="col" class="num">Estimate</th>
+                    <th scope="col" class="num">Range</th>
+                    <th scope="col">Basis</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><span class="todo">To fill: e.g. Ultimate loss (£000)</span></th>
+                    <td class="num"><span class="todo">0,000</span></td>
+                    <td class="num"><span class="todo">0,000–0,000</span></td>
+                    <td><span class="todo">e.g. Chain ladder, bootstrap 5th–95th</span></td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><span class="todo">To fill: e.g. IBNR</span></th>
+                    <td class="num"><span class="todo">0,000</span></td>
+                    <td class="num"><span class="todo">0,000–0,000</span></td>
+                    <td><span class="todo">basis</span></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p>
+              <span class="todo">To fill: two or three sentences interpreting the table. Numbers belong in the table, meaning belongs here.</span>
+            </p>
+          </section>
+
+          <section aria-labelledby="dec-title">
+            <h2 id="dec-title">The decision</h2>
+            <p>
+              <span class="todo">
+                To fill: what the result means for the pricing, reserving, or risk decision, and what would change
+                if the estimate moved to either end of the range.
+              </span>
+            </p>
+            <blockquote>
+              <p>
+                <span class="todo">
+                  Optional: one sentence a reviewer, supervisor, or stakeholder said about the work. Delete the
+                  block if there is none.
+                </span>
+              </p>
+            </blockquote>
+          </section>
+
+          <section aria-labelledby="l-title">
+            <h2 id="l-title">Limitations and next steps</h2>
+            <ul>
+              <li><span class="todo">To fill: the biggest weakness in the data or method, stated plainly.</span></li>
+              <li><span class="todo">To fill: what you would do next with more time or data.</span></li>
+            </ul>
+          </section>
+        </div>
+
+        <aside class="article-aside reveal" aria-label="Project details">
+          <dl class="profile-facts article-facts">
+            <div>
+              <dt>Status</dt>
+              <dd>Case study</dd>
+            </div>
+            <div>
+              <dt>Methods</dt>
+              <dd>
+                <ul class="tag-list" aria-label="Methods">
+                  <li>Chain ladder</li>
+                  <li>Bootstrap</li>
+                  <li>IBNR</li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Tools</dt>
+              <dd>
+                <ul class="tag-list" aria-label="Tools">
+                  <li class="tag-tech">R</li>
+                  <li class="tag-tech">ChainLadder</li>
+                </ul>
+              </dd>
+            </div>
+            <div>
+              <dt>Repository</dt>
+              <dd><span class="todo">To fill: link to the GitHub repository or notebook</span></dd>
+            </div>
+            <div>
+              <dt>Read time</dt>
+              <dd><span class="todo">To fill: e.g. 6 min</span></dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+
+      <p class="page-note"><a href="./projects.html">Back to the project index</a></p>
+    </main>
+
+    <footer class="footer">
+      <p>© 2026 Tom Zhang. Set in Source Sans 3, Source Serif 4, and Source Code Pro.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="./script.js?v=20260918-typographic-hero"></script>
+  </body>
+</html>

@@ -5,17 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Actuarial project portfolio for insurance analytics, risk modelling, pricing, reserving, and forecasting work."
+      content="Tom Zhang's actuarial portfolio: pricing, reserving, and forecasting projects built around business decisions. Based in Dublin, open to actuarial roles."
     />
     <title>Tom Zhang | Actuarial Portfolio</title>
     <meta name="theme-color" content="#f6f1e8" />
     <link rel="canonical" href="https://pnlync.github.io/actuarial-portfolio-site/" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Tom Zhang | Actuarial Portfolio" />
-    <meta property="og:description" content="Actuarial project portfolio for insurance analytics, risk modelling, pricing, reserving, and forecasting work." />
+    <meta property="og:description" content="Pricing, reserving, and forecasting projects built around business decisions. Based in Dublin, open to actuarial roles." />
     <meta property="og:url" content="https://pnlync.github.io/actuarial-portfolio-site/" />
     <meta property="og:locale" content="en_GB" />
-    <meta name="twitter:card" content="summary" />
+    <meta property="og:image" content="https://pnlync.github.io/actuarial-portfolio-site/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Tom Zhang, actuarial portfolio, Dublin, Ireland" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Tom Zhang",
+        "jobTitle": "Actuarial candidate",
+        "url": "https://pnlync.github.io/actuarial-portfolio-site/",
+        "address": { "@type": "PostalAddress", "addressLocality": "Dublin", "addressCountry": "IE" },
+        "knowsAbout": ["Actuarial science", "Insurance pricing", "Claims reserving", "Statistical modelling"]
+      }
+    </script>
+    <!-- TODO: add "sameAs": ["https://github.com/...", "https://www.linkedin.com/in/..."] to the JSON-LD above once the links exist. -->
     <script>document.documentElement.classList.add("js");</script>
     <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg?v=tz-20260918" />
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png?v=tz-20260918" />
@@ -26,7 +42,7 @@
       href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&amp;display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260918-typographic-hero" />
+    <link rel="stylesheet" href="./styles.css?v=20260918-review-3" />
   </head>
   <body>
     <a class="skip-link" href="#top">Skip to content</a>
@@ -42,7 +58,7 @@
       </nav>
     </header>
 
-    <main id="top">
+    <main id="top" tabindex="-1">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-copy reveal">
           <p class="eyebrow">Insurance analytics / risk modelling / reserving</p>
@@ -63,7 +79,7 @@
           </div>
           <div>
             <dt>IFoA exams</dt>
-            <dd>CS1, CS2, CB2, CB3 sat</dd>
+            <dd>Sat CS1, CS2, CB2, CB3</dd>
           </div>
           <div>
             <dt>Tools</dt>
@@ -82,7 +98,7 @@
             <p class="section-kicker">Selected work</p>
             <p>
               Each case study follows the same structure: the question, the data, the method, and the decision it
-              changes. <a href="./projects.html">See the project index</a> for the table view.
+              changes. <a href="./projects.html">See the project index</a> for the full list.
             </p>
           </div>
           <h2 id="projects-title">Selected projects</h2>
@@ -93,11 +109,12 @@
           <div class="project-main">
             <p class="project-type">Pricing model</p>
             <h3>Motor claims frequency with GLM diagnostics</h3>
+            <p class="project-meta"><span class="todo">To fill: Month Year · context (e.g. Sep 2026 · MSc project)</span></p>
             <p>
               Build a transparent rating model, test exposure treatment, compare Poisson and negative binomial
               assumptions, and explain rating-factor movement.
             </p>
-            <ul class="tag-list" aria-label="Project methods">
+            <ul class="tag-list" aria-label="Project methods and tools">
               <li class="tag-tech">Python</li>
               <li>GLM</li>
               <li>Frequency</li>
@@ -112,11 +129,12 @@
           <div class="project-main">
             <p class="project-type">Reserving</p>
             <h3>Claims triangle reserve estimate and uncertainty range</h3>
+            <p class="project-meta"><span class="todo">To fill: Month Year · context (e.g. Sep 2026 · MSc project)</span></p>
             <p>
               Estimate ultimate losses with chain ladder, inspect development stability, and present reserve risk as
               a decision range rather than one point estimate.
             </p>
-            <ul class="tag-list" aria-label="Project methods">
+            <ul class="tag-list" aria-label="Project methods and tools">
               <li class="tag-tech">R</li>
               <li>Chain ladder</li>
               <li>Bootstrap</li>
@@ -131,11 +149,12 @@
           <div class="project-main">
             <p class="project-type">Forecasting</p>
             <h3>Policy lapse and renewal behaviour analysis</h3>
+            <p class="project-meta"><span class="todo">To fill: Month Year · context (e.g. Sep 2026 · MSc project)</span></p>
             <p>
               Segment retention patterns, identify lapse drivers, and translate predictions into underwriting and
               customer-value actions.
             </p>
-            <ul class="tag-list" aria-label="Project methods">
+            <ul class="tag-list" aria-label="Project methods and tools">
               <li class="tag-tech">SQL</li>
               <li>Survival analysis</li>
               <li>Forecasting</li>
@@ -149,10 +168,10 @@
       <section class="section areas reveal" id="areas" aria-labelledby="areas-title">
         <div class="section-heading-plain">
           <p class="section-kicker">Areas of work</p>
-          <h2 id="areas-title">Where the projects sit</h2>
+          <h2 id="areas-title">The questions behind the work</h2>
           <p class="section-lead">
-            Three areas, each tied to a project in the index. Methods are the techniques the work actually uses;
-            tools are what it is built in.
+            Three areas, each tied to a project in the index. Methods are the techniques the work uses; tools are
+            what it is built in.
           </p>
         </div>
         <table class="areas-table">
@@ -227,14 +246,14 @@
       <section class="section profile-section" id="profile" aria-labelledby="profile-title">
         <div class="profile-block reveal">
           <p class="section-kicker">Profile</p>
-          <h2 id="profile-title">Actuarial candidate connecting technical analysis to business outcomes.</h2>
+          <h2 id="profile-title">About me</h2>
           <p>
-            I build actuarial project work around the decisions it should support: pricing assumptions, reserve
-            uncertainty, model diagnostics, and clear communication for insurance teams.
+            I am working through the IFoA exams and building this portfolio of pricing, reserving, and forecasting
+            projects from Dublin, where I am open to actuarial roles.
           </p>
           <p class="todo">
             To fill: two or three sentences on background. Where you studied, what drew you to actuarial work, and
-            the kind of role you are looking for. Keep it factual.
+            the kind of role you are looking for. Keep it factual and specific.
           </p>
         </div>
         <dl class="profile-facts reveal" aria-label="Profile summary">
@@ -245,26 +264,24 @@
             </dd>
           </div>
           <div>
-            <dt>IFoA exams</dt>
-            <dd>
-              Sat CS1, CS2, CB2, CB3
-              <span class="fact-sub">Professionalism Course Stage 1 &amp; 2</span>
-              <!-- TODO: change "Sat" to "Passed" where results are in, and add any exemptions. -->
-            </dd>
-          </div>
-          <div>
             <dt>Experience</dt>
             <dd>
               <span class="todo">To fill: role, employer, dates (one line each; internships and placements count)</span>
             </dd>
           </div>
           <div>
-            <dt>Tools</dt>
-            <dd class="mono">Python · R · SQL · Excel</dd>
+            <dt>IFoA exams</dt>
+            <dd>
+              Sat CS1, CS2, CB2, CB3
+              <span class="fact-sub">Professionalism Course Stage 1 &amp; 2</span>
+              <!-- TODO: change "Sat" to "Passed" where results are in (here and in the hero), and add any exemptions. -->
+            </dd>
           </div>
           <div>
-            <dt>Location</dt>
-            <dd>Dublin, Ireland <span class="fact-sub">Open to actuarial roles</span></dd>
+            <dt>Availability</dt>
+            <dd>
+              <span class="todo">To fill: e.g. Available from October 2026, or notice period</span>
+            </dd>
           </div>
         </dl>
       </section>
@@ -280,14 +297,14 @@
           </div>
           <div>
             <dt>Links</dt>
-            <dd>GitHub / LinkedIn / CV PDF <!-- TODO: turn these into real <a> links --></dd>
+            <dd><span class="todo">To fill: links to GitHub, LinkedIn, and a CV PDF</span></dd>
           </div>
         </dl>
       </section>
     </main>
 
     <footer class="footer">
-      <p>Actuarial portfolio focused on pricing, reserving, and risk analytics.</p>
+      <p>© 2026 Tom Zhang. Set in Source Sans 3, Source Serif 4, and Source Code Pro.</p>
       <a href="#top">Back to top</a>
     </footer>
 
