@@ -1,313 +1,237 @@
 <!doctype html>
-<html lang="en-GB">
+<html lang="en-IE">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tom Zhang · Actuarial Portfolio</title>
     <meta
       name="description"
-      content="Tom Zhang's actuarial portfolio: pricing, reserving, and forecasting projects built around business decisions. Based in Dublin, open to actuarial roles."
+      content="Five actuarial models across pricing, reserving, reinsurance, life and pensions, built end to end and validated against data."
     />
-    <title>Tom Zhang | Actuarial Portfolio</title>
-    <meta name="theme-color" content="#f6f1e8" />
     <link rel="canonical" href="https://pnlync.github.io/actuarial/" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="Tom Zhang | Actuarial Portfolio" />
-    <meta property="og:description" content="Pricing, reserving, and forecasting projects built around business decisions. Based in Dublin, open to actuarial roles." />
+    <meta property="og:title" content="Tom Zhang · Actuarial Portfolio" />
+    <meta
+      property="og:description"
+      content="Five actuarial models across pricing, reserving, reinsurance, life and pensions, built end to end and validated against data."
+    />
     <meta property="og:url" content="https://pnlync.github.io/actuarial/" />
-    <meta property="og:locale" content="en_GB" />
-    <meta property="og:image" content="https://pnlync.github.io/actuarial/assets/og-image.png" />
-    <meta property="og:image:width" content="1200" />
-    <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="Tom Zhang, actuarial portfolio, Dublin, Ireland" />
-    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:card" content="summary" />
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Tom Zhang",
-        "jobTitle": "Actuarial candidate",
         "url": "https://pnlync.github.io/actuarial/",
-        "address": { "@type": "PostalAddress", "addressLocality": "Dublin", "addressCountry": "IE" },
-        "knowsAbout": ["Actuarial science", "Insurance pricing", "Claims reserving", "Statistical modelling"]
+        "email": "mailto:pnlync@gmail.com",
+        "sameAs": ["https://github.com/pnlync", "https://www.linkedin.com/in/zhang42"]
       }
     </script>
-    <!-- TODO: add "sameAs": ["https://github.com/...", "https://www.linkedin.com/in/..."] to the JSON-LD above once the links exist. -->
-    <script>document.documentElement.classList.add("js");</script>
-    <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg?v=tz-20260918" />
-    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32.png?v=tz-20260918" />
-    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png?v=tz-20260918" />
+
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href="./assets/favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="apple-touch-icon" href="./assets/apple-touch-icon.png" />
+
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&amp;family=Source+Sans+3:wght@400;500;600;700&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&amp;display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@400;500;600&amp;family=Source+Sans+3:wght@400;500;600;700;800&amp;family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&amp;display=swap"
     />
-    <link rel="stylesheet" href="./styles.css?v=20260918-review-3" />
+    <link rel="stylesheet" href="./styles.css?v=20260929b" />
   </head>
   <body>
-    <a class="skip-link" href="#top">Skip to content</a>
-    <header class="site-header" data-elevated="false">
-      <a class="brand" href="#top" aria-label="Tom Zhang home">
-        <span>Tom Zhang</span>
-        <small>Actuarial Portfolio</small>
-      </a>
-      <nav class="nav-links" aria-label="Primary navigation">
-        <a href="#projects">Projects</a>
-        <a href="#areas">Areas</a>
-        <a href="#profile">Profile</a>
-      </nav>
+    <a class="skip" href="#work">Skip to projects</a>
+
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="mark" href="#top" aria-label="Tom Zhang, back to top">
+          <img src="./assets/favicon.svg" alt="" width="28" height="28" />
+          <span>Tom Zhang</span>
+        </a>
+        <nav aria-label="Contact and profiles">
+          <ul class="pills">
+            <li><a class="pill pill-solid" href="./assets/Tom_Zhang_CV.pdf">CV <span aria-hidden="true">↓</span></a></li>
+            <li><a class="pill" href="https://github.com/pnlync">GitHub</a></li>
+            <li><a class="pill" href="https://www.linkedin.com/in/zhang42">LinkedIn</a></li>
+            <li><a class="pill" href="mailto:pnlync@gmail.com">Email</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <main id="top" tabindex="-1">
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy reveal">
-          <p class="eyebrow">Insurance analytics / risk modelling / reserving</p>
-          <h1 id="hero-title">Actuarial work that answers a business question.</h1>
-          <p class="hero-text">
-            Pricing, reserving, and forecasting projects, each built around the decision it supports rather than the
-            model behind it.
-          </p>
-          <div class="hero-actions">
-            <a class="button primary" href="#projects">View projects</a>
-            <a class="button secondary" href="#profile">About me</a>
-          </div>
-        </div>
-        <dl class="hero-facts reveal" aria-label="At a glance">
-          <div>
-            <dt>Based in</dt>
-            <dd>Dublin, Ireland <span class="fact-sub">Open to actuarial roles</span></dd>
-          </div>
-          <div>
-            <dt>IFoA exams</dt>
-            <dd>Sat CS1, CS2, CB2, CB3</dd>
-          </div>
-          <div>
-            <dt>Tools</dt>
-            <dd class="mono">Python · R · SQL · Excel</dd>
-          </div>
-          <div>
-            <dt>Methods</dt>
-            <dd>GLM, claims triangles, simulation</dd>
-          </div>
-        </dl>
-      </section>
+    <section id="top" class="hero">
+      <div class="shell">
+        <p class="kicker">Actuarial Portfolio</p>
+        <h1>Tom Zhang</h1>
+        <p class="statement">
+          Five actuarial models — life, pensions, pricing, reserving and reinsurance — each built
+          end to end, tested against data, and <em>open to inspect</em>.
+        </p>
 
-      <section class="section projects" id="projects" aria-labelledby="projects-title">
-        <div class="section-heading reveal">
-          <div class="section-note">
-            <p class="section-kicker">Selected work</p>
-            <p>
-              Each case study follows the same structure: the question, the data, the method, and the decision it
-              changes. <a href="./projects.html">See the project index</a> for the full list.
-            </p>
-          </div>
-          <h2 id="projects-title">Selected projects</h2>
-        </div>
+        <ol class="index" aria-label="Projects at a glance">
+          <li>
+            <a href="#life">
+              <span class="index-num">01</span>
+              <span class="index-area">Life</span>
+              <span class="index-fig">−36%</span>
+              <span class="index-cap">risk margin under EU 2027 reform</span>
+            </a>
+          </li>
+          <li>
+            <a href="#pension">
+              <span class="index-num">02</span>
+              <span class="index-area">Pensions</span>
+              <span class="index-fig">32→52%</span>
+              <span class="index-cap">IAS 19 hedge ratio after switch</span>
+            </a>
+          </li>
+          <li>
+            <a href="#pricing">
+              <span class="index-num">03</span>
+              <span class="index-area">Pricing</span>
+              <span class="index-fig">0.3%</span>
+              <span class="index-cap">GLM gap to held-out losses</span>
+            </a>
+          </li>
+          <li>
+            <a href="#reserving">
+              <span class="index-num">04</span>
+              <span class="index-area">Reserving</span>
+              <span class="index-fig">−10.3%</span>
+              <span class="index-cap">blind back-test vs actual run-off</span>
+            </a>
+          </li>
+          <li>
+            <a href="#reinsurance">
+              <span class="index-num">05</span>
+              <span class="index-area">Reinsurance</span>
+              <span class="index-fig">−81.7%</span>
+              <span class="index-cap">1-in-200 economic capital</span>
+            </a>
+          </li>
+        </ol>
+      </div>
+    </section>
 
-        <article class="project-row reveal">
-          <div class="project-number">01</div>
-          <div class="project-main">
-            <p class="project-type">Pricing model</p>
-            <h3>Motor claims frequency with GLM diagnostics</h3>
-            <p class="project-meta"><span class="todo">To fill: Month Year · context (e.g. Sep 2026 · MSc project)</span></p>
-            <p>
-              Build a transparent rating model, test exposure treatment, compare Poisson and negative binomial
-              assumptions, and explain rating-factor movement.
+    <main id="work" class="work">
+      <div class="shell">
+        <article class="project" id="life">
+          <figure class="fig"><svg viewBox="0 0 480 300" role="img" aria-label="Term life profit signature with initial strain and declining policies in force" xmlns="http://www.w3.org/2000/svg"><text x="40.0" y="28.0" class="cap" text-anchor="start">PROFIT SIGNATURE · POLICIES IN FORCE</text><line x1="56" y1="180" x2="456" y2="180" class="axis"/><rect x="59.0" y="180" width="14.0" height="78.0" class="bar-neg"/><rect x="79.0" y="138.7" width="14.0" height="41.3" class="bar-hi"/><rect x="99.0" y="138.5" width="14.0" height="41.5" class="bar-hi"/><rect x="119.0" y="139.1" width="14.0" height="40.9" class="bar-hi"/><rect x="139.0" y="140.4" width="14.0" height="39.6" class="bar-hi"/><rect x="159.0" y="142.5" width="14.0" height="37.5" class="bar-hi"/><rect x="179.0" y="145.3" width="14.0" height="34.7" class="bar-hi"/><rect x="199.0" y="148.6" width="14.0" height="31.4" class="bar-hi"/><rect x="219.0" y="152.1" width="14.0" height="27.9" class="bar-hi"/><rect x="239.0" y="155.6" width="14.0" height="24.4" class="bar-hi"/><rect x="259.0" y="158.8" width="14.0" height="21.2" class="bar-hi"/><rect x="279.0" y="161.7" width="14.0" height="18.3" class="bar-hi"/><rect x="299.0" y="164.0" width="14.0" height="16.0" class="bar-hi"/><rect x="319.0" y="165.7" width="14.0" height="14.3" class="bar-hi"/><rect x="339.0" y="166.9" width="14.0" height="13.1" class="bar-hi"/><rect x="359.0" y="167.5" width="14.0" height="12.5" class="bar-hi"/><rect x="379.0" y="167.6" width="14.0" height="12.4" class="bar-hi"/><rect x="399.0" y="167.5" width="14.0" height="12.5" class="bar-hi"/><rect x="419.0" y="167.2" width="14.0" height="12.8" class="bar-hi"/><rect x="439.0" y="166.9" width="14.0" height="13.1" class="bar-hi"/><polyline class="line" points="56.0,60.0 76.0,68.1 96.0,75.6 116.0,82.5 136.0,88.8 156.0,94.6 176.0,100.0 196.0,104.8 216.0,109.3 236.0,113.5 256.0,117.3 276.0,120.7 296.0,123.9 316.0,126.9 336.0,129.6 356.0,132.1 376.0,134.3 396.0,136.4 416.0,138.3 436.0,140.1 456.0,141.7"/><text x="60.0" y="54.0" class="val" text-anchor="start">in force</text><text x="82.0" y="246.0" class="val" text-anchor="start">new-business strain</text><text x="56.0" y="284.0" class="ax" text-anchor="middle">yr 0</text><text x="156.0" y="284.0" class="ax" text-anchor="middle">yr 5</text><text x="256.0" y="284.0" class="ax" text-anchor="middle">yr 10</text><text x="356.0" y="284.0" class="ax" text-anchor="middle">yr 15</text><text x="456.0" y="284.0" class="ax" text-anchor="middle">yr 20</text></svg></figure>
+          <div class="body">
+            <p class="meta"><span class="meta-num">01</span>Life Insurance</p>
+            <h2><a href="https://pnlync.github.io/assurance/">Term Life Pricing, Valuation &amp; Capital Model</a></h2>
+            <p class="summary">
+              One seriatim cash-flow engine for a 50K-policy Irish protection book that drives
+              profit-tested pricing, experience analysis, IFRS 17 and Solvency II, reconciled to
+              the cent against an independent Excel model.
             </p>
-            <ul class="tag-list" aria-label="Project methods and tools">
-              <li class="tag-tech">Python</li>
-              <li>GLM</li>
-              <li>Frequency</li>
-              <li>Model validation</li>
+            <ul class="tags">
+              <li>Profit Testing</li><li>A/E Experience</li><li>IFRS 17</li><li>Solvency II</li><li>Analysis of Change</li>
             </ul>
+            <p class="actions">
+              <a class="btn btn-solid" href="https://pnlync.github.io/assurance/">View project <span aria-hidden="true">→</span></a>
+              <a class="btn" href="https://github.com/pnlync/assurance">Code <span aria-hidden="true">↗</span></a>
+            </p>
           </div>
-          <span class="project-status">In preparation</span>
         </article>
 
-        <article class="project-row reveal">
-          <div class="project-number">02</div>
-          <div class="project-main">
-            <p class="project-type">Reserving</p>
-            <h3>Claims triangle reserve estimate and uncertainty range</h3>
-            <p class="project-meta"><span class="todo">To fill: Month Year · context (e.g. Sep 2026 · MSc project)</span></p>
-            <p>
-              Estimate ultimate losses with chain ladder, inspect development stability, and present reserve risk as
-              a decision range rather than one point estimate.
+        <article class="project" id="pension">
+          <figure class="fig"><svg viewBox="0 0 480 300" role="img" aria-label="Pension liability cash flows by year with the hedged share highlighted" xmlns="http://www.w3.org/2000/svg"><text x="40.0" y="28.0" class="cap" text-anchor="start">PROJECTED BENEFIT CASH FLOWS · SHARE HEDGED</text><line x1="56" y1="256" x2="456" y2="256" class="axis"/><rect x="58.0" y="226.1" width="9.3" height="29.9" class="bar-lo"/><rect x="58.0" y="240.5" width="9.3" height="15.5" class="bar-hi"/><rect x="71.3" y="203.9" width="9.3" height="52.1" class="bar-lo"/><rect x="71.3" y="228.9" width="9.3" height="27.1" class="bar-hi"/><rect x="84.7" y="181.7" width="9.3" height="74.3" class="bar-lo"/><rect x="84.7" y="217.4" width="9.3" height="38.6" class="bar-hi"/><rect x="98.0" y="161.0" width="9.3" height="95.0" class="bar-lo"/><rect x="98.0" y="206.6" width="9.3" height="49.4" class="bar-hi"/><rect x="111.3" y="142.6" width="9.3" height="113.4" class="bar-lo"/><rect x="111.3" y="197.0" width="9.3" height="59.0" class="bar-hi"/><rect x="124.7" y="127.0" width="9.3" height="129.0" class="bar-lo"/><rect x="124.7" y="188.9" width="9.3" height="67.1" class="bar-hi"/><rect x="138.0" y="114.4" width="9.3" height="141.6" class="bar-lo"/><rect x="138.0" y="182.3" width="9.3" height="73.7" class="bar-hi"/><rect x="151.3" y="104.6" width="9.3" height="151.4" class="bar-lo"/><rect x="151.3" y="177.3" width="9.3" height="78.7" class="bar-hi"/><rect x="164.7" y="97.5" width="9.3" height="158.5" class="bar-lo"/><rect x="164.7" y="173.6" width="9.3" height="82.4" class="bar-hi"/><rect x="178.0" y="92.9" width="9.3" height="163.1" class="bar-lo"/><rect x="178.0" y="171.2" width="9.3" height="84.8" class="bar-hi"/><rect x="191.3" y="90.5" width="9.3" height="165.5" class="bar-lo"/><rect x="191.3" y="169.9" width="9.3" height="86.1" class="bar-hi"/><rect x="204.7" y="90.0" width="9.3" height="166.0" class="bar-lo"/><rect x="204.7" y="169.7" width="9.3" height="86.3" class="bar-hi"/><rect x="218.0" y="91.2" width="9.3" height="164.8" class="bar-lo"/><rect x="218.0" y="170.3" width="9.3" height="85.7" class="bar-hi"/><rect x="231.3" y="93.8" width="9.3" height="162.2" class="bar-lo"/><rect x="231.3" y="171.7" width="9.3" height="84.3" class="bar-hi"/><rect x="244.7" y="97.6" width="9.3" height="158.4" class="bar-lo"/><rect x="244.7" y="173.6" width="9.3" height="82.4" class="bar-hi"/><rect x="258.0" y="102.3" width="9.3" height="153.7" class="bar-lo"/><rect x="258.0" y="176.1" width="9.3" height="79.9" class="bar-hi"/><rect x="271.3" y="107.8" width="9.3" height="148.2" class="bar-lo"/><rect x="271.3" y="178.9" width="9.3" height="77.1" class="bar-hi"/><rect x="284.7" y="113.8" width="9.3" height="142.2" class="bar-lo"/><rect x="284.7" y="182.1" width="9.3" height="73.9" class="bar-hi"/><rect x="298.0" y="120.2" width="9.3" height="135.8" class="bar-lo"/><rect x="298.0" y="185.4" width="9.3" height="70.6" class="bar-hi"/><rect x="311.3" y="126.9" width="9.3" height="129.1" class="bar-lo"/><rect x="311.3" y="188.9" width="9.3" height="67.1" class="bar-hi"/><rect x="324.7" y="133.7" width="9.3" height="122.3" class="bar-lo"/><rect x="324.7" y="192.4" width="9.3" height="63.6" class="bar-hi"/><rect x="338.0" y="140.6" width="9.3" height="115.4" class="bar-lo"/><rect x="338.0" y="196.0" width="9.3" height="60.0" class="bar-hi"/><rect x="351.3" y="147.4" width="9.3" height="108.6" class="bar-lo"/><rect x="351.3" y="199.5" width="9.3" height="56.5" class="bar-hi"/><rect x="364.7" y="154.1" width="9.3" height="101.9" class="bar-lo"/><rect x="364.7" y="203.0" width="9.3" height="53.0" class="bar-hi"/><rect x="378.0" y="160.7" width="9.3" height="95.3" class="bar-lo"/><rect x="378.0" y="206.4" width="9.3" height="49.6" class="bar-hi"/><rect x="391.3" y="167.1" width="9.3" height="88.9" class="bar-lo"/><rect x="391.3" y="209.8" width="9.3" height="46.2" class="bar-hi"/><rect x="404.7" y="173.2" width="9.3" height="82.8" class="bar-lo"/><rect x="404.7" y="212.9" width="9.3" height="43.1" class="bar-hi"/><rect x="418.0" y="179.1" width="9.3" height="76.9" class="bar-lo"/><rect x="418.0" y="216.0" width="9.3" height="40.0" class="bar-hi"/><rect x="431.3" y="184.7" width="9.3" height="71.3" class="bar-lo"/><rect x="431.3" y="218.9" width="9.3" height="37.1" class="bar-hi"/><rect x="444.7" y="190.0" width="9.3" height="66.0" class="bar-lo"/><rect x="444.7" y="221.7" width="9.3" height="34.3" class="bar-hi"/><rect x="290" y="58" width="14" height="14" class="bar-lo"/><text x="312.0" y="70.0" class="ax" text-anchor="start">liability cash flow</text><rect x="290" y="84" width="14" height="14" class="bar-hi"/><text x="312.0" y="96.0" class="ax" text-anchor="start">hedged by LDI (52%)</text><text x="62.7" y="278.0" class="ax" text-anchor="middle">2025</text><text x="196.0" y="278.0" class="ax" text-anchor="middle">2035</text><text x="329.3" y="278.0" class="ax" text-anchor="middle">2045</text><text x="462.7" y="278.0" class="ax" text-anchor="middle">2055</text></svg></figure>
+          <div class="body">
+            <p class="meta"><span class="meta-num">02</span>Pensions</p>
+            <h2><a href="https://pnlync.github.io/db-pension/">Defined Benefit Pension Valuation &amp; De-risking Model</a></h2>
+            <p class="summary">
+              A 1,000-member Irish final-salary scheme valued under IAS 19 and the Funding
+              Standard, rolled through 2025 on actual market data, then taken through a funding
+              plan, an LDI switch and a pensioner buy-in quote.
             </p>
-            <ul class="tag-list" aria-label="Project methods and tools">
-              <li class="tag-tech">R</li>
-              <li>Chain ladder</li>
-              <li>Bootstrap</li>
-              <li>IBNR</li>
+            <ul class="tags">
+              <li>IAS 19</li><li>Funding Standard &amp; FSR</li><li>LDI</li><li>Buy-in Pricing</li>
             </ul>
+            <p class="actions">
+              <a class="btn btn-solid" href="https://pnlync.github.io/db-pension/">View project <span aria-hidden="true">→</span></a>
+              <a class="btn" href="https://github.com/pnlync/db-pension">Code <span aria-hidden="true">↗</span></a>
+            </p>
           </div>
-          <span class="project-status">In preparation</span>
         </article>
 
-        <article class="project-row reveal">
-          <div class="project-number">03</div>
-          <div class="project-main">
-            <p class="project-type">Forecasting</p>
-            <h3>Policy lapse and renewal behaviour analysis</h3>
-            <p class="project-meta"><span class="todo">To fill: Month Year · context (e.g. Sep 2026 · MSc project)</span></p>
-            <p>
-              Segment retention patterns, identify lapse drivers, and translate predictions into underwriting and
-              customer-value actions.
+        <article class="project" id="pricing">
+          <figure class="fig"><svg viewBox="0 0 480 300" role="img" aria-label="Bar chart of GLM relativities by risk band with a credibility-blended line" xmlns="http://www.w3.org/2000/svg"><line x1="40" y1="170" x2="456" y2="170" class="base"/><text x="456.0" y="188.0" class="ax" text-anchor="end">1.00 base</text><rect x="52" y="170.0" width="30" height="60.8" class="bar-lo"/><text x="67.0" y="246.8" class="val" text-anchor="middle">×0.68</text><rect x="102" y="170.0" width="30" height="39.9" class="bar-lo"/><text x="117.0" y="225.9" class="val" text-anchor="middle">×0.79</text><rect x="152" y="170.0" width="30" height="17.1" class="bar-lo"/><text x="167.0" y="203.1" class="val" text-anchor="middle">×0.91</text><rect x="202" y="168.5" width="30" height="3" class="bar-lo"/><text x="217.0" y="186.0" class="val" text-anchor="middle">×1.00</text><rect x="252" y="147.2" width="30" height="22.8" class="bar-hi"/><text x="267.0" y="139.2" class="val" text-anchor="middle">×1.12</text><rect x="302" y="118.7" width="30" height="51.3" class="bar-hi"/><text x="317.0" y="110.7" class="val" text-anchor="middle">×1.27</text><rect x="352" y="82.6" width="30" height="87.4" class="bar-hi"/><text x="367.0" y="74.6" class="val" text-anchor="middle">×1.46</text><rect x="402" y="35.1" width="30" height="134.9" class="bar-hi"/><text x="417.0" y="27.1" class="val" text-anchor="middle">×1.71</text><polyline class="line" points="67.0,213.8 117.0,198.7 167.0,182.3 217.0,170.0 267.0,153.6 317.0,133.1 367.0,97.6 417.0,72.9"/><circle cx="67.0" cy="213.8" r="3.2" class="dot"/><circle cx="117.0" cy="198.7" r="3.2" class="dot"/><circle cx="167.0" cy="182.3" r="3.2" class="dot"/><circle cx="217.0" cy="170.0" r="3.2" class="dot"/><circle cx="267.0" cy="153.6" r="3.2" class="dot"/><circle cx="317.0" cy="133.1" r="3.2" class="dot"/><circle cx="367.0" cy="97.6" r="3.2" class="dot"/><circle cx="417.0" cy="72.9" r="3.2" class="dot"/><text x="40.0" y="28.0" class="cap" text-anchor="start">GLM RELATIVITY BY RISK BAND</text><text x="40.0" y="284.0" class="ax" text-anchor="start">low risk</text><text x="456.0" y="284.0" class="ax" text-anchor="end">high risk</text></svg></figure>
+          <div class="body">
+            <p class="meta"><span class="meta-num">03</span>General Insurance · Pricing</p>
+            <h2><a href="https://pnlync.github.io/shipping-insurance/">Return-Shipping Insurance Pricing Engine</a></h2>
+            <p class="summary">
+              A frequency-severity GLM that prices return-shipping cover on 110K real e-commerce
+              order items, blends in sparse seller experience through credibility, and keeps the
+              GLM as champion against an XGBoost challenger.
             </p>
-            <ul class="tag-list" aria-label="Project methods and tools">
-              <li class="tag-tech">SQL</li>
-              <li>Survival analysis</li>
-              <li>Forecasting</li>
-              <li>Segmentation</li>
+            <ul class="tags">
+              <li>GLM</li><li>Credibility</li><li>XGBoost</li><li>Loss Ratio Monitoring</li><li>Stress Testing</li>
             </ul>
+            <p class="actions">
+              <a class="btn btn-solid" href="https://pnlync.github.io/shipping-insurance/">View project <span aria-hidden="true">→</span></a>
+              <a class="btn" href="https://github.com/pnlync/shipping-insurance">Code <span aria-hidden="true">↗</span></a>
+            </p>
           </div>
-          <span class="project-status">In preparation</span>
         </article>
-      </section>
 
-      <section class="section areas reveal" id="areas" aria-labelledby="areas-title">
-        <div class="section-heading-plain">
-          <p class="section-kicker">Areas of work</p>
-          <h2 id="areas-title">The questions behind the work</h2>
-          <p class="section-lead">
-            Three areas, each tied to a project in the index. Methods are the techniques the work uses; tools are
-            what it is built in.
-          </p>
-        </div>
-        <table class="areas-table">
-          <thead>
-            <tr>
-              <th scope="col">Area</th>
-              <th scope="col">Question it answers</th>
-              <th scope="col">Methods</th>
-              <th scope="col">Tools</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Pricing</th>
-              <td>What should this risk cost, and which rating factors carry real signal?</td>
-              <td>
-                <ul class="tag-list" aria-label="Pricing methods">
-                  <li>GLM</li>
-                  <li>Poisson / negative binomial</li>
-                  <li>Exposure adjustment</li>
-                  <li>Calibration &amp; lift</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="tag-list" aria-label="Pricing tools">
-                  <li class="tag-tech">Python</li>
-                  <li class="tag-tech">statsmodels</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Reserving</th>
-              <td>How much is still to be paid on claims already incurred, and how uncertain is that figure?</td>
-              <td>
-                <ul class="tag-list" aria-label="Reserving methods">
-                  <li>Chain ladder</li>
-                  <li>Bornhuetter–Ferguson</li>
-                  <li>Bootstrap</li>
-                  <li>IBNR</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="tag-list" aria-label="Reserving tools">
-                  <li class="tag-tech">R</li>
-                  <li class="tag-tech">ChainLadder</li>
-                  <li class="tag-tech">Excel</li>
-                </ul>
-              </td>
-            </tr>
-            <tr>
-              <th scope="row">Experience &amp; forecasting</th>
-              <td>Which policies lapse or renew, why, and what that means for underwriting and customer value?</td>
-              <td>
-                <ul class="tag-list" aria-label="Forecasting methods">
-                  <li>Survival analysis</li>
-                  <li>Segmentation</li>
-                  <li>Time series</li>
-                </ul>
-              </td>
-              <td>
-                <ul class="tag-list" aria-label="Forecasting tools">
-                  <li class="tag-tech">SQL</li>
-                  <li class="tag-tech">Python</li>
-                </ul>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-        <!-- TODO: adjust methods/tools to match what each written-up project actually uses; add a row if you have a fourth area (e.g. capital, IFRS 17). -->
-      </section>
+        <article class="project" id="reserving">
+          <figure class="fig"><svg viewBox="0 0 480 300" role="img" aria-label="Claims development triangle split into observed and projected cells" xmlns="http://www.w3.org/2000/svg"><text x="40.0" y="28.0" class="cap" text-anchor="start">PAID CLAIMS TRIANGLE · ACCIDENT YEAR × DEVELOPMENT</text><text x="86.0" y="62.0" class="ax" text-anchor="end">1998</text><rect x="97" y="47" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121" y="47" width="22" height="22" class="cell" style="opacity:0.27"/><rect x="145" y="47" width="22" height="22" class="cell" style="opacity:0.36"/><rect x="169" y="47" width="22" height="22" class="cell" style="opacity:0.45"/><rect x="193" y="47" width="22" height="22" class="cell" style="opacity:0.54"/><rect x="217" y="47" width="22" height="22" class="cell" style="opacity:0.63"/><rect x="241" y="47" width="22" height="22" class="cell" style="opacity:0.72"/><rect x="265" y="47" width="22" height="22" class="cell" style="opacity:0.81"/><rect x="289" y="47" width="22" height="22" class="cell" style="opacity:0.90"/><text x="86.0" y="86.0" class="ax" text-anchor="end">1999</text><rect x="97" y="71" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121" y="71" width="22" height="22" class="cell" style="opacity:0.27"/><rect x="145" y="71" width="22" height="22" class="cell" style="opacity:0.36"/><rect x="169" y="71" width="22" height="22" class="cell" style="opacity:0.45"/><rect x="193" y="71" width="22" height="22" class="cell" style="opacity:0.54"/><rect x="217" y="71" width="22" height="22" class="cell" style="opacity:0.63"/><rect x="241" y="71" width="22" height="22" class="cell" style="opacity:0.72"/><rect x="265" y="71" width="22" height="22" class="cell" style="opacity:0.81"/><rect x="289.5" y="71.5" width="21" height="21" class="proj"/><text x="86.0" y="110.0" class="ax" text-anchor="end">2000</text><rect x="97" y="95" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121" y="95" width="22" height="22" class="cell" style="opacity:0.27"/><rect x="145" y="95" width="22" height="22" class="cell" style="opacity:0.36"/><rect x="169" y="95" width="22" height="22" class="cell" style="opacity:0.45"/><rect x="193" y="95" width="22" height="22" class="cell" style="opacity:0.54"/><rect x="217" y="95" width="22" height="22" class="cell" style="opacity:0.63"/><rect x="241" y="95" width="22" height="22" class="cell" style="opacity:0.72"/><rect x="265.5" y="95.5" width="21" height="21" class="proj"/><rect x="289.5" y="95.5" width="21" height="21" class="proj"/><text x="86.0" y="134.0" class="ax" text-anchor="end">2001</text><rect x="97" y="119" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121" y="119" width="22" height="22" class="cell" style="opacity:0.27"/><rect x="145" y="119" width="22" height="22" class="cell" style="opacity:0.36"/><rect x="169" y="119" width="22" height="22" class="cell" style="opacity:0.45"/><rect x="193" y="119" width="22" height="22" class="cell" style="opacity:0.54"/><rect x="217" y="119" width="22" height="22" class="cell" style="opacity:0.63"/><rect x="241.5" y="119.5" width="21" height="21" class="proj"/><rect x="265.5" y="119.5" width="21" height="21" class="proj"/><rect x="289.5" y="119.5" width="21" height="21" class="proj"/><text x="86.0" y="158.0" class="ax" text-anchor="end">2002</text><rect x="97" y="143" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121" y="143" width="22" height="22" class="cell" style="opacity:0.27"/><rect x="145" y="143" width="22" height="22" class="cell" style="opacity:0.36"/><rect x="169" y="143" width="22" height="22" class="cell" style="opacity:0.45"/><rect x="193" y="143" width="22" height="22" class="cell" style="opacity:0.54"/><rect x="217.5" y="143.5" width="21" height="21" class="proj"/><rect x="241.5" y="143.5" width="21" height="21" class="proj"/><rect x="265.5" y="143.5" width="21" height="21" class="proj"/><rect x="289.5" y="143.5" width="21" height="21" class="proj"/><text x="86.0" y="182.0" class="ax" text-anchor="end">2003</text><rect x="97" y="167" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121" y="167" width="22" height="22" class="cell" style="opacity:0.27"/><rect x="145" y="167" width="22" height="22" class="cell" style="opacity:0.36"/><rect x="169" y="167" width="22" height="22" class="cell" style="opacity:0.45"/><rect x="193.5" y="167.5" width="21" height="21" class="proj"/><rect x="217.5" y="167.5" width="21" height="21" class="proj"/><rect x="241.5" y="167.5" width="21" height="21" class="proj"/><rect x="265.5" y="167.5" width="21" height="21" class="proj"/><rect x="289.5" y="167.5" width="21" height="21" class="proj"/><text x="86.0" y="206.0" class="ax" text-anchor="end">2004</text><rect x="97" y="191" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121" y="191" width="22" height="22" class="cell" style="opacity:0.27"/><rect x="145" y="191" width="22" height="22" class="cell" style="opacity:0.36"/><rect x="169.5" y="191.5" width="21" height="21" class="proj"/><rect x="193.5" y="191.5" width="21" height="21" class="proj"/><rect x="217.5" y="191.5" width="21" height="21" class="proj"/><rect x="241.5" y="191.5" width="21" height="21" class="proj"/><rect x="265.5" y="191.5" width="21" height="21" class="proj"/><rect x="289.5" y="191.5" width="21" height="21" class="proj"/><text x="86.0" y="230.0" class="ax" text-anchor="end">2005</text><rect x="97" y="215" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121" y="215" width="22" height="22" class="cell" style="opacity:0.27"/><rect x="145.5" y="215.5" width="21" height="21" class="proj"/><rect x="169.5" y="215.5" width="21" height="21" class="proj"/><rect x="193.5" y="215.5" width="21" height="21" class="proj"/><rect x="217.5" y="215.5" width="21" height="21" class="proj"/><rect x="241.5" y="215.5" width="21" height="21" class="proj"/><rect x="265.5" y="215.5" width="21" height="21" class="proj"/><rect x="289.5" y="215.5" width="21" height="21" class="proj"/><text x="86.0" y="254.0" class="ax" text-anchor="end">2006</text><rect x="97" y="239" width="22" height="22" class="cell" style="opacity:0.18"/><rect x="121.5" y="239.5" width="21" height="21" class="proj"/><rect x="145.5" y="239.5" width="21" height="21" class="proj"/><rect x="169.5" y="239.5" width="21" height="21" class="proj"/><rect x="193.5" y="239.5" width="21" height="21" class="proj"/><rect x="217.5" y="239.5" width="21" height="21" class="proj"/><rect x="241.5" y="239.5" width="21" height="21" class="proj"/><rect x="265.5" y="239.5" width="21" height="21" class="proj"/><rect x="289.5" y="239.5" width="21" height="21" class="proj"/><text x="108.0" y="278.0" class="ax" text-anchor="middle">12</text><text x="132.0" y="278.0" class="ax" text-anchor="middle">24</text><text x="156.0" y="278.0" class="ax" text-anchor="middle">36</text><text x="180.0" y="278.0" class="ax" text-anchor="middle">48</text><text x="204.0" y="278.0" class="ax" text-anchor="middle">60</text><text x="228.0" y="278.0" class="ax" text-anchor="middle">72</text><text x="252.0" y="278.0" class="ax" text-anchor="middle">84</text><text x="276.0" y="278.0" class="ax" text-anchor="middle">96</text><text x="300.0" y="278.0" class="ax" text-anchor="middle">108</text><rect x="340" y="70" width="14" height="14" class="cell"/><text x="362.0" y="82.0" class="ax" text-anchor="start">observed</text><rect x="340.5" y="98.5" width="13" height="13" class="proj"/><text x="362.0" y="110.0" class="ax" text-anchor="start">projected</text><line x1="340" y1="140" x2="354" y2="140" class="base"/><text x="362.0" y="144.0" class="ax" text-anchor="start">blind cut-off</text><polyline class="cut" points="312,46 312,46 288,46 288,70 264,70 264,94 240,94 240,118 216,118 216,142 192,142 192,166 168,166 168,190 144,190 144,214 120,214 120,238 96,238 96,262"/></svg></figure>
+          <div class="body">
+            <p class="meta"><span class="meta-num">04</span>General Insurance · Reserving</p>
+            <h2><a href="https://pnlync.github.io/reserving/">Commercial Auto IBNR Estimation &amp; Blind Back-Test</a></h2>
+            <p class="summary">
+              Year-end reserves for a real US commercial auto insurer from NAIC Schedule P
+              triangles. The selection was locked in git before any later data was opened, then
+              scored against nine years of actual run-off and rerun on 45 insurers.
+            </p>
+            <ul class="tags">
+              <li>Chain Ladder</li><li>Bornhuetter–Ferguson</li><li>Cape Cod</li><li>Mack</li><li>Bootstrap</li>
+            </ul>
+            <p class="actions">
+              <a class="btn btn-solid" href="https://pnlync.github.io/reserving/">View project <span aria-hidden="true">→</span></a>
+              <a class="btn" href="https://github.com/pnlync/reserving">Code <span aria-hidden="true">↗</span></a>
+            </p>
+          </div>
+        </article>
 
-      <section class="section profile-section" id="profile" aria-labelledby="profile-title">
-        <div class="profile-block reveal">
-          <p class="section-kicker">Profile</p>
-          <h2 id="profile-title">About me</h2>
-          <p>
-            I am working through the IFoA exams and building this portfolio of pricing, reserving, and forecasting
-            projects from Dublin, where I am open to actuarial roles.
-          </p>
-          <p class="todo">
-            To fill: two or three sentences on background. Where you studied, what drew you to actuarial work, and
-            the kind of role you are looking for. Keep it factual and specific.
-          </p>
-        </div>
-        <dl class="profile-facts reveal" aria-label="Profile summary">
-          <div>
-            <dt>Education</dt>
-            <dd>
-              <span class="todo">To fill: degree, institution, years (e.g. MSc Actuarial Science, University, 2024–2025)</span>
-            </dd>
+        <article class="project" id="reinsurance">
+          <figure class="fig"><svg viewBox="0 0 480 300" role="img" aria-label="Exceedance curve with three catastrophe excess-of-loss layers and the 1-in-200 point" xmlns="http://www.w3.org/2000/svg"><text x="40.0" y="28.0" class="cap" text-anchor="start">OCCURRENCE EXCEEDANCE CURVE · CAT XOL LAYERS</text><rect x="56" y="203.3" width="400" height="35.7" class="layer" style="opacity:0.10"/><text x="354.8" y="231.0" class="val" text-anchor="end">Layer 1 · 1-in-5 to 1-in-20</text><rect x="56" y="147.1" width="400" height="56.2" class="layer" style="opacity:0.17"/><text x="64.0" y="162.1" class="val" text-anchor="start">Layer 2 · 1-in-20 to 1-in-100</text><rect x="56" y="109.1" width="400" height="38.0" class="layer" style="opacity:0.24"/><text x="64.0" y="124.1" class="val" text-anchor="start">Layer 3 · 1-in-100 to 1-in-250</text><line x1="56" y1="260" x2="456" y2="260" class="axis"/><polyline class="line" points="56.0,260.0 66.0,259.4 76.0,258.2 86.0,256.6 96.0,254.6 106.0,252.2 116.0,249.6 126.0,246.7 136.0,243.6 146.0,240.1 156.0,236.5 166.0,232.6 176.0,228.5 186.0,224.2 196.0,219.7 206.0,215.0 216.0,210.1 226.0,205.1 236.0,199.8 246.0,194.4 256.0,188.7 266.0,183.0 276.0,177.0 286.0,170.9 296.0,164.6 306.0,158.2 316.0,151.6 326.0,144.8 336.0,137.9 346.0,130.9 356.0,123.7 366.0,116.3 376.0,108.9 386.0,101.2 396.0,93.5 406.0,85.6 416.0,77.5 426.0,69.3 436.0,61.0 446.0,52.6 456.0,44.0"/><line x1="362.8" y1="38" x2="362.8" y2="260" class="base"/><text x="356.8" y="48.0" class="val" text-anchor="end">1-in-200</text><text x="56.0" y="278.0" class="ax" text-anchor="middle">1</text><text x="189.3" y="278.0" class="ax" text-anchor="middle">10</text><text x="322.7" y="278.0" class="ax" text-anchor="middle">100</text><text x="456.0" y="278.0" class="ax" text-anchor="middle">1000</text><text x="456.0" y="294.0" class="ax" text-anchor="end">return period (years, log)</text></svg></figure>
+          <div class="body">
+            <p class="meta"><span class="meta-num">05</span>Reinsurance · Capital</p>
+            <h2><a href="https://pnlync.github.io/reinsurance/">Flood Catastrophe Reinsurance &amp; Capital Optimisation</a></h2>
+            <p class="summary">
+              An event-level flood model built from public NFIP data and simulated over 100,000
+              years, used to price quota share and Cat XoL layers and compare 255 programmes on a
+              cost–capital frontier.
+            </p>
+            <ul class="tags">
+              <li>Cat XoL</li><li>Reinstatements</li><li>OEP / AEP</li><li>Economic Capital</li>
+            </ul>
+            <p class="actions">
+              <a class="btn btn-solid" href="https://pnlync.github.io/reinsurance/">View project <span aria-hidden="true">→</span></a>
+              <a class="btn" href="https://github.com/pnlync/reinsurance">Code <span aria-hidden="true">↗</span></a>
+            </p>
           </div>
-          <div>
-            <dt>Experience</dt>
-            <dd>
-              <span class="todo">To fill: role, employer, dates (one line each; internships and placements count)</span>
-            </dd>
-          </div>
-          <div>
-            <dt>IFoA exams</dt>
-            <dd>
-              Sat CS1, CS2, CB2, CB3
-              <span class="fact-sub">Professionalism Course Stage 1 &amp; 2</span>
-              <!-- TODO: change "Sat" to "Passed" where results are in (here and in the hero), and add any exemptions. -->
-            </dd>
-          </div>
-          <div>
-            <dt>Availability</dt>
-            <dd>
-              <span class="todo">To fill: e.g. Available from October 2026, or notice period</span>
-            </dd>
-          </div>
-        </dl>
-      </section>
-
-      <section class="contact-section reveal" id="contact" aria-labelledby="contact-title">
-        <div class="contact-heading">
-          <h2 id="contact-title">Open to actuarial roles</h2>
-        </div>
-        <dl class="contact-list" aria-label="Contact details">
-          <div>
-            <dt>Email</dt>
-            <dd><a href="mailto:pnlync@gmail.com">pnlync@gmail.com</a></dd>
-          </div>
-          <div>
-            <dt>Links</dt>
-            <dd><span class="todo">To fill: links to GitHub, LinkedIn, and a CV PDF</span></dd>
-          </div>
-        </dl>
-      </section>
+        </article>
+      </div>
     </main>
 
     <footer class="footer">
-      <p>© 2026 Tom Zhang. Set in Source Sans 3, Source Serif 4, and Source Code Pro.</p>
-      <a href="#top">Back to top</a>
+      <div class="shell footer-inner">
+        <div>
+          <p class="footer-name">Tom Zhang</p>
+          <p class="footer-note">Background, education and qualifications are in the CV.</p>
+        </div>
+        <ul class="pills">
+          <li><a class="pill pill-solid" href="./assets/Tom_Zhang_CV.pdf">CV <span aria-hidden="true">↓</span></a></li>
+          <li><a class="pill" href="https://github.com/pnlync">GitHub</a></li>
+          <li><a class="pill" href="https://www.linkedin.com/in/zhang42">LinkedIn</a></li>
+          <li><a class="pill" href="mailto:pnlync@gmail.com">Email</a></li>
+        </ul>
+      </div>
+      <p class="shell copy">© 2026 Tom Zhang</p>
     </footer>
-
-    <script src="./script.js?v=20260918-typographic-hero"></script>
   </body>
 </html>
