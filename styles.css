@@ -6,13 +6,15 @@
   --panel: #fbfaf7;
   --ink: #0f1217;
   --ink-2: #3a414d;
-  --muted: #737a86;
+  --muted: #626975;
   --line: #d8d6ce;
   --grid: rgba(15, 18, 23, 0.022);
   --accent: #2340f0;
   --accent-ink: #ffffff;
   --bar: #c9c7be;
   --neg: #d4553a;
+  --footer-bg: #0f1217;
+  --footer-ink: #f1f0eb;
 
   --sans: "Source Sans 3", system-ui, -apple-system, "Segoe UI", sans-serif;
   --serif: "Source Serif 4", Georgia, serif;
@@ -36,6 +38,8 @@
     --accent-ink: #0b0d11;
     --bar: #343a45;
     --neg: #ef7a5f;
+  --footer-bg: #12151b;
+  --footer-ink: #eef0f4;
     color-scheme: dark;
   }
 }
@@ -52,6 +56,8 @@
   --accent-ink: #0b0d11;
   --bar: #343a45;
   --neg: #ef7a5f;
+  --footer-bg: #12151b;
+  --footer-ink: #eef0f4;
   color-scheme: dark;
 }
 
@@ -200,9 +206,6 @@ ol {
 }
 
 .kicker {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
   margin: 0 0 18px;
   font-size: 14px;
   font-weight: 700;
@@ -218,8 +221,13 @@ ol {
 
 .kicker::before {
   content: "";
+  display: inline-block;
   width: 28px;
   height: 2px;
+  margin-right: 10px;
+  vertical-align: middle;
+  position: relative;
+  top: -2px;
   background: currentColor;
 }
 
@@ -600,8 +608,9 @@ ol {
 
 .footer {
   padding-block: 56px 40px;
-  background: var(--ink);
-  color: var(--bg);
+  border-top: 1px solid var(--line);
+  background: var(--footer-bg);
+  color: var(--footer-ink);
 }
 
 .footer-inner {
@@ -621,17 +630,17 @@ ol {
 }
 
 .footer .pill {
-  border-color: color-mix(in srgb, var(--bg) 25%, transparent);
+  border-color: color-mix(in srgb, var(--footer-ink) 25%, transparent);
 }
 
 .footer .pill:hover {
-  border-color: var(--bg);
+  border-color: var(--footer-ink);
 }
 
 .footer .pill-solid {
-  background: var(--bg);
-  border-color: var(--bg);
-  color: var(--ink);
+  background: var(--footer-ink);
+  border-color: var(--footer-ink);
+  color: var(--footer-bg);
 }
 
 .footer .pill-solid:hover {
@@ -719,6 +728,7 @@ ol {
 
   .kicker-name {
     display: inline;
+    margin-right: 0.4em;
   }
 
   .topbar .pills {
@@ -765,9 +775,24 @@ ol {
 }
 
 @media (max-width: 380px) {
+  .topbar .pills {
+    flex-wrap: nowrap;
+    gap: 4px;
+  }
+
   .topbar .pill {
-    padding: 0 9px;
+    padding: 0 8px;
     font-size: 13px;
+  }
+
+  .kicker {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+  }
+
+  .kicker::before {
+    width: 18px;
+    margin-right: 8px;
   }
 }
 
