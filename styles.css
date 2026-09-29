@@ -260,9 +260,9 @@ ol {
   grid-template-columns: auto 1fr;
   grid-template-areas:
     "num area"
-    "fig fig"
-    "cap cap";
+    "fig fig";
   column-gap: 10px;
+  align-content: start;
   height: 100%;
   padding: 20px 20px 22px;
   text-decoration: none;
@@ -289,23 +289,13 @@ ol {
   text-transform: uppercase;
 }
 
-.index-fig {
+.index-methods {
   grid-area: fig;
-  margin-top: 22px;
-  font-size: clamp(28px, 3vw, 36px);
-  font-weight: 700;
-  letter-spacing: -0.02em;
-  line-height: 1;
-  font-variant-numeric: tabular-nums;
-  color: var(--accent);
-}
-
-.index-cap {
-  grid-area: cap;
-  margin-top: 8px;
-  font-size: 14px;
-  line-height: 1.35;
-  color: var(--muted);
+  margin-top: 14px;
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 1.4;
+  color: var(--ink-2);
 }
 
 /* ---------- Projects ---------- */
@@ -477,6 +467,30 @@ ol {
   color: var(--ink-2);
 }
 
+.results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
+  margin: 24px 0 0;
+  padding-top: 20px;
+  border-top: 1px solid var(--line);
+}
+
+.results dt {
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+
+.results dd {
+  margin: 6px 0 0;
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--muted);
+}
+
 .tags {
   display: flex;
   flex-wrap: wrap;
@@ -560,12 +574,6 @@ ol {
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1;
-}
-
-.footer-note {
-  margin: 12px 0 0;
-  font-size: 15px;
-  opacity: 0.65;
 }
 
 .footer .pill {
